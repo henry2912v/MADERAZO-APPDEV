@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { MyCustomPagePage } from './my-custom-page/my-custom-page.page';
-import { CustomPageWithId } from './my-custom-page/custom-page-with-id/custom-page-with-id';
 
 const routes: Routes = [
   {
@@ -14,13 +12,9 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'my-custom-page',
-    loadChildren: () => import('./my-custom-page/my-custom-page.module').then( m => m.MyCustomPagePageModule)
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
-  {
-    path: 'my-custom-page/:id',
-    component: CustomPageWithId
-  }
 ];
 
 @NgModule({
