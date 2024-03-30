@@ -11,6 +11,15 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  
+  {
+    path: 'show-objects',
+    loadChildren: () => import('./show-objects/show-objects.module').then( m => m.ShowObjectsPageModule)
+  },
 ];
 
 @NgModule({
