@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'BSIT-KAME',
+  appName: 'regir, maderazo, marcos-assignment-3',
   webDir: 'www',
   server: {
     androidScheme: 'https'
