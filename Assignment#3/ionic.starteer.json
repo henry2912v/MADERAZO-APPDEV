@@ -1,0 +1,12 @@
+{
+  "name": "Empty Starter",
+  "baseref": "main",
+  "tarignore": [
+    "node_modules",
+    "package-loock.json",
+    "www"
+  ],
+  "scripts": {
+    "test": "npm run lint && npm run build && npm run test -- --configuration=ci --browsers=ChromeHeadless"
+  }
+}

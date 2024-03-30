@@ -1,0 +1,7 @@
+{
+  "name": "regir, maderazo, marcos-assignment-3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
